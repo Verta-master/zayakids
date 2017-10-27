@@ -1,0 +1,1 @@
+$(document).on('click','.js_comments_show_form, .comments_show_form',function(){$(this).next('.js_comments_block_form, .comments_block_form').toggle();});
