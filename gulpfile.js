@@ -87,7 +87,8 @@ gulp.task("js:production", function () {
 
 gulp.task("copy", function () {
   return gulp.src([
-    "fonts/**/*",
+    "custom/**/*",
+    "userfls/**/*",
     "img/*.{svg,png,jpg,gif}",
     "js/*.js",
     "*.html"
