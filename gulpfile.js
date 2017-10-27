@@ -91,6 +91,7 @@ gulp.task("copy", function () {
     "userfls/**/*",
     "img/*.{svg,png,jpg,gif}",
     "js/*.js",
+    "css/*.css",
     "*.html"
   ], {
     base: "."
