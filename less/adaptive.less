@@ -95,14 +95,26 @@ button {
     transform: rotate(180deg);
   }
   
-  .pics,
-  .info,
-  .item-right {
-    float: none;
-  }
-  
   .col-right {
     width: 650px;
+  }
+  
+  .item-right {
+    display: none;
+  }
+  
+  .catalog_mod {
+    margin-bottom: 0;
+  }
+  
+  .catalog__item .hide {
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .catalog__item {
+    margin-bottom: 25px;
   }
 }
 
@@ -163,6 +175,20 @@ button {
     max-height: 60px;
     margin-left: auto;
     margin-right: auto;
+  }
+  
+  .catalog {
+    text-align: center;
+  }
+  
+  .pics {
+    margin-left: 100px;
+  }
+  
+  .info,
+  .info__box {
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -255,6 +281,10 @@ button {
     float: left;
     margin-left: 0;
   }
+  
+  .pics {
+    margin-left: 0;
+  }
 }
 
 //-----------------------------
@@ -282,9 +312,7 @@ button {
   }
   
   .info {
-    margin-top: 100px;
     margin-left: 0;
-    width: 100%;
   }
   
   .tabs__item {
@@ -314,9 +342,5 @@ button {
     div:nth-child(2n+1) {
       padding-right: 0;
     }
-  }
-  
-  .catalog {
-    text-align: center;
   }
 }
