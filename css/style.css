@@ -85,6 +85,9 @@ button {
   .item-right {
     float: none;
   }
+  .col-right {
+    width: 650px;
+  }
 }
 @media (max-width: 829px) {
   .preview__item {
@@ -107,6 +110,33 @@ button {
   .preview__item_medium .preview__overlay {
     width: 300px;
     height: 180px;
+  }
+  .col-left,
+  .col-right {
+    width: 100%;
+  }
+  .col-left {
+    margin-bottom: 0;
+  }
+  .col-left form {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .col-left form div {
+    width: 50%;
+  }
+  .col-left form div:nth-child(2n+1) {
+    padding-right: 20px;
+  }
+  .col-left form .shop_unit {
+    width: 100%;
+  }
+  .shop_submit_btn {
+    max-height: 60px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (max-width: 767px) {
@@ -183,6 +213,14 @@ button {
   .input-title {
     display: block;
   }
+  .catalog__item {
+    margin-right: 10px;
+    width: 260px;
+  }
+  .sort__unit {
+    float: left;
+    margin-left: 0;
+  }
 }
 @media (max-width: 499px) {
   .nav li {
@@ -220,5 +258,18 @@ button {
   }
   .item-unit {
     padding-left: 5px;
+  }
+  .col-left form {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .col-left form div {
+    width: 100%;
+  }
+  .col-left form div:nth-child(2n+1) {
+    padding-right: 0;
+  }
+  .catalog {
+    text-align: center;
   }
 }
