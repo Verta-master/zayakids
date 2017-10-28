@@ -17,6 +17,11 @@ button {
   display: none;
 }
 
+.nav li:hover .nav__popup {
+  display: block;
+  z-index: 10;
+}
+
 //----------------------------
 @media (max-width: 1025px) {
   #wrapper {
@@ -65,20 +70,26 @@ button {
   
   .nav__label {
     position: absolute;
-    top: 12px;
-    right: 10px;
+    top: 0;
+    right: 0;
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 41px;
     background-image: url(../img/icon-arrow-down-white.svg);
     background-repeat: no-repeat;
     background-size: 19px 11px;
     background-position: center;
     cursor: pointer;
+    z-index: 10;
   }
   
-  .nav__check:checked .nav__popup {
-    display: block !important;
+  .nav__check:checked ~ .nav__popup {
+    display: block;
+    visibility: visible;
+  }
+  
+  .nav__check:checked + .nav__label {
+    transform: rotate(180deg);
   }
 }
 
@@ -143,6 +154,7 @@ button {
   
   .preview {
     margin-bottom: 30px;
+    flex-direction: column;
   }
   
   .iabout {
@@ -194,5 +206,9 @@ button {
   
   .wrap__center {
     padding: 0;
+  }
+  
+  .nav__popup {
+    position: static;
   }
 }

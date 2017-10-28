@@ -33,33 +33,33 @@ $(function() {
 
     
     
-    $('.nav > li').hover(function() {
-        $(this).find('.nav__popup').stop().fadeToggle('fast');
-    });
+//    $('.nav > li').hover(function() {
+//        $(this).find('.nav__popup').stop().fadeToggle('fast');
+//    });
     
     // выравнивание высоы попапов главного меню
    
-    $('.nav__popup').each(function() {
-        var $this = $(this);
-        $this.css({
-            'display': 'block',
-            'z-index': -3,
-            'visibility': 'hidden'
-        })
-        var $unit = $this.find('.nav__unit');
-        var bd_max_height = 0;    
-        for(var i = 0; i<$unit.length; i++) {
-            if ($unit.eq(i).outerHeight() > bd_max_height) {
-                bd_max_height = $unit.eq(i).outerHeight();
-            }
-        }
-        $unit.outerHeight(bd_max_height);
-        $this.css({
-            'display': 'none',
-            'z-index': 2,
-            'visibility': 'visible'
-        })
-    });
+//    $('.nav__popup').each(function() {
+//        var $this = $(this);
+//        $this.css({
+//            'display': 'block',
+//            'z-index': -3,
+//            'visibility': 'hidden'
+//        })
+//        var $unit = $this.find('.nav__unit');
+//        var bd_max_height = 0;    
+//        for(var i = 0; i<$unit.length; i++) {
+//            if ($unit.eq(i).outerHeight() > bd_max_height) {
+//                bd_max_height = $unit.eq(i).outerHeight();
+//            }
+//        }
+//        $unit.outerHeight(bd_max_height);
+//        $this.css({
+//            'display': 'none',
+//            'z-index': 2,
+//            'visibility': 'visible'
+//        })
+//    });
     
     $('.call-back').click(function(e) {
         e.stopPropagation();
