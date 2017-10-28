@@ -71,11 +71,19 @@ button {
     cursor: pointer;
     z-index: 10;
   }
+  .nav__check:not(checked) ~ .nav__popup {
+    display: none !important;
+  }
   .nav__check:checked ~ .nav__popup {
-    display: block;
+    display: block !important;
   }
   .nav__check:checked + .nav__label {
     transform: rotate(180deg);
+  }
+  .pics,
+  .info,
+  .item-right {
+    float: none;
   }
 }
 @media (max-width: 829px) {
@@ -172,6 +180,9 @@ button {
   #wrapper {
     padding-bottom: 0 !important;
   }
+  .input-title {
+    display: block;
+  }
 }
 @media (max-width: 499px) {
   .nav li {
@@ -182,5 +193,32 @@ button {
   }
   .nav__popup {
     position: static;
+  }
+  .pics__big {
+    float: none;
+    width: 280px;
+  }
+  .pics__big img {
+    width: 100%;
+    height: auto;
+  }
+  .info {
+    margin-top: 100px;
+    margin-left: 0;
+    width: 100%;
+  }
+  .tabs__item {
+    min-width: 49%;
+    width: 49.5%;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 16px;
+  }
+  .tab-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .item-unit {
+    padding-left: 5px;
   }
 }

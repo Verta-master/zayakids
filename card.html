@@ -54,6 +54,8 @@
           <ul class="nav">
             <li>
               <a href="http://zayakids.ru/shop/odezhda/" class="active">Одежда</a>
+              <input type="checkbox" name="nav-btn" id="nav-btn" class="nav__check">
+              <label for="nav-btn" class="nav__label"></label>
               <div class="nav__popup">
                 <div class="nav__unit">
                   <ul>
@@ -149,62 +151,62 @@
             <button class="btn btn_black btn_close">Продолжить покупки</button>
           </div>
         </div>
-        <div class="item-right block-in">
-          <div class="block block_toggle">
-						<h3 class="block_header">Оплата</h3>
-						<div class="block__in"><p>Все вопросы по заказу, оплате и доставке можно задать Viber, WhatApp +79190575925&nbsp;</p></div>
-					</div>
-					<div class="block block_toggle block_toggle_hide">
-						<h3 class="block_header">Доставка</h3>
-						<div class="block__in"><p>Доставка во все города. Стоимость доставки 300 руб. При заказе от &nbsp;3000 руб. доставка бесплатно.</p></div>
-					</div>
-				</div>
-				<div class="tabs">
-				  <a rel="nofollow" href=".tab-1" class="tabs__item active">Характеристики</a>
-				  <a rel="nofollow" href=".tab-2" class="tabs__item">Комментарии</a>
-				</div>
-				<div class="tab-1"><div class="item-unit">Размер: <b>66, 73, 80</b></div><div class="item-unit">Цвет: <b>серый, розовый, зеленый, голубой</b></div><div class="item-unit">Состав: <b>Хлопок</b></div></div>
-				<div class="tab-2">
-				  <div class="comments" style="display:none"><div class="block_header">Комментарии</div></div>
-				  <div class="comments_form">
-            <form method="POST" action="" id="comments" class="ajax" enctype="multipart/form-data">
-              <input type="hidden" name="module" value="comments">
-              <input type="hidden" name="action" value="add">
-              <input type="hidden" name="form_tag" value="comments0">
-              <input type="hidden" name="parent_id" value="0">
-              <input type="hidden" name="element_id" value="128">
-              <input type="hidden" name="module_name" value="shop">
-              <input type="hidden" name="element_type" value="element">
-              <input type="hidden" name="tmpcode" value="2aac0e27587428fe2aafe882c5974a85">
-              <div class="block_header">Оставьте комментарий</div>
-              <div class="comments_form_param1">
-                <div class="infofield">Имя<span style="color:red;">*</span>:</div>
-				        <input type="text" name="p1" value="">
-				      </div>
-				      <div class="errors error_p1" style="display:none"></div>
-				      <textarea name="comment"></textarea>
-				      <div class="errors error" style="display:none"></div>
-				      <div class="infoform">Подписаться на комментарии (впишите e-mail):</div>
-				      <input name="mail" type="email" value="">
-				      <div class="errors error_mail" style="display:none"></div>
-				      <br>
-				      <div class="captcha"><div class="block captcha">
-                <img src="http://zayakids.ru/captcha/get/comments09520" width="159" height="80" class="code_img captcha-image">
-                <input type="hidden" name="captchaint" value="9520">
-                <input type="hidden" name="captcha_update" value="">
-                <span class="input-title">Введите код с картинки:</span>
-                <input type="text" name="captcha" value="" autocomplete="off">
+          <div class="item-right block-in">
+            <div class="block block_toggle">
+              <h3 class="block_header">Оплата</h3>
+              <div class="block__in"><p>Все вопросы по заказу, оплате и доставке можно задать Viber, WhatApp +79190575925&nbsp;</p></div>
+            </div>
+            <div class="block block_toggle block_toggle_hide">
+              <h3 class="block_header">Доставка</h3>
+              <div class="block__in"><p>Доставка во все города. Стоимость доставки 300 руб. При заказе от &nbsp;3000 руб. доставка бесплатно.</p></div>
+            </div>
+          </div>
+          <div class="tabs">
+            <a rel="nofollow" href=".tab-1" class="tabs__item active">Характеристики</a>
+            <a rel="nofollow" href=".tab-2" class="tabs__item">Комментарии</a>
+          </div>
+          <div class="tab-1"><div class="item-unit">Размер: <b>66, 73, 80</b></div><div class="item-unit">Цвет: <b>серый, розовый, зеленый, голубой</b></div><div class="item-unit">Состав: <b>Хлопок</b></div></div>
+          <div class="tab-2">
+            <div class="comments" style="display:none"><div class="block_header">Комментарии</div></div>
+            <div class="comments_form">
+              <form method="POST" action="" id="comments" class="ajax" enctype="multipart/form-data">
+                <input type="hidden" name="module" value="comments">
+                <input type="hidden" name="action" value="add">
+                <input type="hidden" name="form_tag" value="comments0">
+                <input type="hidden" name="parent_id" value="0">
+                <input type="hidden" name="element_id" value="128">
+                <input type="hidden" name="module_name" value="shop">
+                <input type="hidden" name="element_type" value="element">
+                <input type="hidden" name="tmpcode" value="2aac0e27587428fe2aafe882c5974a85">
+                <div class="block_header">Оставьте комментарий</div>
+                <div class="comments_form_param1">
+                  <div class="infofield">Имя<span style="color:red;">*</span>:</div>
+                  <input type="text" name="p1" value="">
+                </div>
+                <div class="errors error_p1" style="display:none"></div>
+                <textarea name="comment"></textarea>
+                <div class="errors error" style="display:none"></div>
+                <div class="infoform">Подписаться на комментарии (впишите e-mail):</div>
+                <input name="mail" type="email" value="">
+                <div class="errors error_mail" style="display:none"></div>
                 <br>
-                <div class="js_captcha_update captcha_update"><a href="javascript:void(0)" class="button-refresh">&nbsp;</a></div></div><div class="errors error_captcha" style="display:none"></div>
-              </div>
-              <input type="submit" value="Отправить" class="button solid">
-              <br>Отправляя форму, я даю согласие на <a href="http://zayakids.ru/privacy/">обработку персональных данных</a>.
-              <div class="required_field"><span style="color:red;">*</span> — Поля, обязательные для заполнения</div>
-            </form>
+                <div class="captcha"><div class="block captcha">
+                  <img src="http://zayakids.ru/captcha/get/comments09520" width="159" height="80" class="code_img captcha-image">
+                  <input type="hidden" name="captchaint" value="9520">
+                  <input type="hidden" name="captcha_update" value="">
+                  <span class="input-title">Введите код с картинки:</span>
+                  <input type="text" name="captcha" value="" autocomplete="off">
+                  <br>
+                  <div class="js_captcha_update captcha_update"><a href="javascript:void(0)" class="button-refresh">&nbsp;</a></div></div><div class="errors error_captcha" style="display:none"></div>
+                </div>
+                <input type="submit" value="Отправить" class="button solid">
+                <br>Отправляя форму, я даю согласие на <a href="http://zayakids.ru/privacy/">обработку персональных данных</a>.
+                <div class="required_field"><span style="color:red;">*</span> — Поля, обязательные для заполнения</div>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="catalog catalog_mod"></div>
+        <div class="catalog catalog_mod"></div>
 			</div>
 		</div>
 		
